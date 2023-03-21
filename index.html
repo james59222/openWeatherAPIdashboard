@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Link html to css and normalize. -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" 
+    integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+  
+  <main>
+    <body>
+<!-- Container for search bar -->
+      <div class="container ui inverted vertical masthead center aligned background-image">
+        <h1>Country Searcher</h1>
+        <div class="ui search">
+        <div class="ui icon input">
+          <input id="searchInput" class="prompt" type="text" name="server" placeholder="Search countries...">
+          <i class="search icon"></i>
+        </div>
+        <div class="results"></div>
+        </div> 
+        <button onclick='saveData()' class="ui primary button " id="submitBtn">
+            Search
+        </button>
+        <button class="ui primary button" id="clearBtn" onclick="clearAll()">
+          Clear
+        </button>
+        <div class = "card-1 center cards" id = "card1"></div>
+        <div class = "card-2 center cards" id = "card2"></div>
+        <div class = "card-3 center cards" id = "card3">
+          
+        </div>
+
+  
+       </div>            
+<!-- Link html to jquery, semantic ui, js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" 
+      integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</main>
+  
+</html>
