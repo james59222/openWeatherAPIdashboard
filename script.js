@@ -4,6 +4,7 @@ var container1 = document.querySelector(".card-1");
 var recentSearchVar = document.querySelector(".h2-element");
 var container = document.querySelector(".container");
 
+
 //Function saves the search bar input data into local storage.
 function saveData() {
   var input = document.getElementById("searchInput").value;
@@ -100,6 +101,7 @@ function clearAll(){
   
   //document.getElementById("card3").innerHTML = "";
 };
+
 
 var today = dayjs();
 var currentHour = today.hour();
