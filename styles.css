@@ -13,7 +13,6 @@ html, body, main {
     justify-content: left;
     align-items: left;
     display: flex;
-    flex-direction: column;
     background-color:white;
     max-width: 50%;
     min-height: 50%;
@@ -27,7 +26,7 @@ html, body, main {
 }
 
 .container1 {
- border-radius: 200px;
+ border-radius: 50px;
 }
 .cards,  {
     width: 200px;
@@ -72,3 +71,17 @@ html, body, main {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+.card-1 {
+    outline: 2px black;
+}
+
+/* #rectangle{
+    align-items: right;
+    width:600px;
+    height:200px;
+    border: 1px solid black;
+    margin:0 auto;
+    margin-top:1cm;
+    vertical-align: top;
+} */
