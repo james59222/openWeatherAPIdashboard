@@ -41,20 +41,49 @@ submitBtn.addEventListener("click", function () {
         windDiv.setAttribute("id", "wind");
         var humidityDiv = document.createElement("div");
         humidityDiv.setAttribute("id", "humidity");
+        var timeStampDiv = document.createElement("div");
+        timeStampDiv = document.createElement("div");
+        var tempDiv2 = document.createElement("div");
+        tempDiv2.setAttribute("id", "temp");
+        var windDiv2 = document.createElement("div");
+        windDiv2.setAttribute("id", "wind");
+        var humidityDiv2 = document.createElement("div");
+        humidityDiv2.setAttribute("id", "humidity");
+        var timeStampDiv2 = document.createElement("div");
+        timeStampDiv2 = document.createElement("div");
+        var tempDiv3 = document.createElement("div");
+        tempDiv3.setAttribute("id", "temp");
+        var windDiv3 = document.createElement("div");
+        windDiv3.setAttribute("id", "wind");
+        var humidityDiv3 = document.createElement("div");
+        humidityDiv3.setAttribute("id", "humidity");
+        
         //There are no arrays key on objects only eg.data.current.condition.text
-        tempDiv.textContent =
-          "Temp: " + data.list[1].main.temp +"°F";
+        tempDiv.textContent = "Temp: " + data.list[1].main.temp +"°F";
         windDiv.textContent = "Wind:" + data.list[1].wind.speed + "MPH";
-     
-        humidityDiv.textContent =
-        "Humidity:" + data.list[1].main.humidity + "%";
+        humidityDiv.textContent = "Humidity:" + data.list[1].main.humidity + "%";
+        timeStampDiv.textContent = data.list[8].dt_txt;
+        tempDiv2.textContent = "Temp: " + data.list[8].main.temp +"°F";
+        windDiv2.textContent = "Wind:" + data.list[8].wind.speed + "MPH";
+        humidityDiv2.textContent = "Humidity:" + data.list[8].main.humidity + "%";
+        timeStampDiv2.textContent = data.list[16].dt_txt;
+        tempDiv3.textContent = "Temp: " + data.list[16].main.temp +"°F";
+        windDiv3.textContent = "Wind:" + data.list[16].wind.speed + "MPH";
+        humidityDiv3.textContent = "Humidity:" + data.list[16].main.humidity + "%";
         
         var container1 = document.querySelector(".card-1");
         container1.appendChild(tempDiv);
-        // container2.appendChild(temp_cDiv);
         container1.appendChild(windDiv);
-        // container2.appendChild(conditionDiv);
         container1.appendChild(humidityDiv);
+        container1.appendChild(timeStampDiv);
+        container1.appendChild(tempDiv2);
+        container1.appendChild(windDiv2);
+        container1.appendChild(humidityDiv2);
+        container1.appendChild(timeStampDiv2);
+        container1.appendChild(tempDiv3);
+        container1.appendChild(windDiv3);
+        container1.appendChild(humidityDiv3);
+        
       });
   }
 );

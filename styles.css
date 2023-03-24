@@ -48,5 +48,6 @@ html, body, main {
 
 .card-1 {
     outline: 2px black; 
+    flex-direction: row;
     
 }
